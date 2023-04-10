@@ -3,12 +3,36 @@
   padding: 0;
 }
 
+html {
+  background-color: aliceblue;
+}
+
+blockquote {
+  padding: 8px 40px;
+}
+
+hr {
+  margin: 0 32px;
+}
+
+.date {
+  margin: 0 0 16px auto;
+}
+
+.post {
+}
+
+.postHead * {
+  display: inline;
+}
+
 .display {
+  width: 100%;
   display: flex;
 }
 
 #logo {
-  color: white;
+  color: #fff;
   text-align: center;
   font-size: 48px;
   text-decoration: underline;
@@ -17,23 +41,22 @@
 
 #navigation {
   background-color: rgba(0, 0, 0, 0.65);
-  width: fit-content;
-  padding: 8pxzzzzzzzz;
-  height: 982px;
+  border-right: 2px solid #000;
+  max-width: 192px;
+  padding: 8px;
+  height: 100%;
   left: 0px;
   top: 0px;
+  position: fixed;
 }
 
-#postdisplay {
-  padding: 16px 32px;
-  margin-left: 1%;
-  width: 60%;
+#main {
+  padding: 16px;
 }
 
 #posts {
+  padding: 16px 32px;
+  width: 60%;
+  margin-left: 224px;
   background-color: rgba(0, 0, 0, 0.15);
-}
-
-#users {
-  color: white;
 }

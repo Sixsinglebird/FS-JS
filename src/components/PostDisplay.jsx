@@ -1,11 +1,10 @@
 import Posts from "./Posts";
 
-const PostDisplay = () => {
+const PostDisplay = ({ posts }) => {
   return (
-    <div id="postdisplay">
-      <h1>home</h1>
-      <Posts />
-    </div>
+    <>
+      <Posts posts={posts} />
+    </>
   );
 };
 

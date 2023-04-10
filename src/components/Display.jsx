@@ -2,12 +2,12 @@ import React from "react";
 import Nav from "./Nav";
 import PostDisplay from "./PostDisplay";
 
-const Display = ({ users }) => {
+const Display = ({ users, posts }) => {
   return (
     <>
-      <div className="display">
+      <div>
         <Nav users={users} />
-        <PostDisplay />
+        <PostDisplay posts={posts} />
       </div>
     </>
   );
