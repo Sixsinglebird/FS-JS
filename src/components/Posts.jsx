@@ -3,11 +3,7 @@ import React from "react";
 const Posts = () => {
   return (
     <>
-      <div id="posts">
-        <li></li>
-        <li></li>
-        <li></li>
-      </div>
+      <div id="posts">fart</div>
     </>
   );
 };
