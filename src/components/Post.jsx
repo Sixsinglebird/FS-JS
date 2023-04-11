@@ -3,11 +3,11 @@ import PostHead from "./PostHead";
 
 const Post = ({ user, date, content }) => {
   const fetchUser = async (id) =>
-    await fetch(`http://localhost:8000/users/${id}`).then((rsp) => rsp.json());
-  // .then((rsp) => rsp);
+    await fetch(`http://localhost:8000/users/${id}`)
+      .then((rsp) => rsp.json())
+      .then(console.log);
 
-  let tmp = fetchUser(user);
-  console.log(tmp);
+  fetchUser(user);
 
   return (
     <div className="post">
