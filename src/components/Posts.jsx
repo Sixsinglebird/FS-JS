@@ -5,7 +5,12 @@ const Posts = ({ posts }) => {
   return (
     <div id="posts">
       {posts.map((post) => (
-        <Post user={post.userID} content={post.content} date={post.date} />
+        <Post
+          user={post.id}
+          content={post.content}
+          date={post.date}
+          key={post.postID}
+        />
       ))}
       <hr />
     </div>
