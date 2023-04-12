@@ -1,8 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "./App.css";
+import Nav from "./components/Nav";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PostDisplay from "./components/PostDisplay";
 import Display from "./components/Display";
-import { Routes, Route } from "react-router-dom";
 
 function App() {
   useEffect(() => {
@@ -34,19 +36,17 @@ function App() {
     let data = await rsp.json();
     return data;
   };
-
+  //   <Routes>
+  //   <Display users={users} posts={posts} />
+  // </Routes>
   return (
-    <>
-      {/* <Routes>
-        <Route path="/" element={<Display users={users} posts={posts} />}>
-          <Route index element={<></>} />
-          <Route path="blogs" element={<></>} />
-          <Route path="contact" element={<></>} />
-          <Route path="*" element={<></>} />
-        </Route>
-      </Routes> */}
-      <Display users={users} posts={posts} />
-    </>
+    <Router>
+      <Nav users={users} />
+      {/* <PostDisplay posts={posts} /> */}
+      <Routes>
+        <Route path="/" element={<PostDisplay posts={posts} />} />
+      </Routes>
+    </Router>
   );
 }
 
