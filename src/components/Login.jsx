@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 // the component useState keeps track of the usename and password values
 // it also defines three functions
 //handle(Username + Password)Change and handle submit
@@ -7,10 +8,7 @@ import React, { useState } from "react";
 //the submit function logs the username and passwords
 //values to the console when the user submits the form
 
-const Login = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-
+const Login = ({ setPassword, setUsername, username, password }) => {
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
   };
@@ -18,6 +16,7 @@ const Login = () => {
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(`Username: ${username} Password: ${password}`);
@@ -30,9 +29,10 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <div>
             <label>
-              Username:
+              Username&nbsp;
               <input
                 type="text"
+                placeholder="enter username..."
                 value={username}
                 onChange={handleUsernameChange}
               />
@@ -40,9 +40,10 @@ const Login = () => {
           </div>
           <div>
             <label>
-              Password:
+              Password&nbsp;
               <input
                 type="password"
+                placeholder="enter password..."
                 value={password}
                 onChange={handlePasswordChange}
               />
