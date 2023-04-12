@@ -1,11 +1,14 @@
 import React from "react";
-import Users from "./Users";
+import { Link } from "react-router-dom";
 
-const Nav = ({ users }) => {
+const Nav = () => {
   return (
-    <div id="navigation">
-      <h1 id="logo">SomeBlog</h1>
-      <Users users={users} />
+    <div id="nav" className="bottom-element">
+      <ul>
+        <li>Home</li>
+        <li>Profile</li>
+        <li>Sign-Out</li>
+      </ul>
     </div>
   );
 };

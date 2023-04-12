@@ -12,7 +12,6 @@ const Posts = ({ posts }) => {
           key={post.postID}
         />
       ))}
-      <hr />
     </div>
   );
 };
