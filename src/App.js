@@ -1,10 +1,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "./App.css";
-import Nav from "./components/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import PostDisplay from "./components/PostDisplay";
-import Display from "./components/Display";
+import Main from "./components/Main";
+import Login from "./components/Login";
 
 function App() {
   useEffect(() => {
@@ -22,6 +21,8 @@ function App() {
   // create hooks
   const [users, setUsers] = useState([]);
   const [posts, setPosts] = useState([]);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   // returns an array of posts from json server
   const fetchPosts = async () => {
@@ -36,15 +37,22 @@ function App() {
     let data = await rsp.json();
     return data;
   };
-  //   <Routes>
-  //   <Display users={users} posts={posts} />
-  // </Routes>
+
   return (
     <Router>
-      <Nav users={users} />
-      {/* <PostDisplay posts={posts} /> */}
       <Routes>
-        <Route path="/" element={<PostDisplay posts={posts} />} />
+        <Route
+          path="/"
+          element={
+            <Login
+              setUsername={setUsername}
+              setPassword={setPassword}
+              username={username}
+              password={password}
+            />
+          }
+        />
+        <Route path="/main" element={<Main users={users} posts={posts} />} />
       </Routes>
     </Router>
   );

@@ -6,6 +6,7 @@ const Post = ({ user, date, content }) => {
     <div className="post">
       <PostHead user={user} date={date} />
       <blockquote>{content}</blockquote>
+      <hr />
     </div>
   );
 };

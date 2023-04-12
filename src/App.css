@@ -4,7 +4,7 @@
 }
 
 html {
-  background-color: aliceblue;
+  background-color: paleturquoise;
 }
 
 blockquote {
@@ -20,6 +20,7 @@ hr {
 }
 
 .post {
+  padding: 8px 16px;
 }
 
 .postHead * {
@@ -27,8 +28,15 @@ hr {
 }
 
 .display {
+  height: 100%;
   width: 100%;
   display: flex;
+}
+
+.bottom-element {
+  position: absolute;
+  bottom: 0;
+  padding: 32px 16px;
 }
 
 #logo {
@@ -39,7 +47,7 @@ hr {
   letter-spacing: -0.11em;
 }
 
-#navigation {
+#sidebar {
   background-color: rgba(0, 0, 0, 0.65);
   border-right: 2px solid #000;
   max-width: 192px;
@@ -50,13 +58,15 @@ hr {
   position: fixed;
 }
 
-#main {
-  padding: 16px;
+#login {
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 #posts {
   padding: 16px 32px;
   width: 60%;
   margin-left: 224px;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
 }
