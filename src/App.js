@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import "./App.css";
 import Display from "./components/Display";
@@ -36,14 +37,15 @@ function App() {
 
   return (
     <>
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Display users={users} posts={posts} />}>
           <Route index element={<></>} />
           <Route path="blogs" element={<></>} />
           <Route path="contact" element={<></>} />
           <Route path="*" element={<></>} />
         </Route>
-      </Routes>
+      </Routes> */}
+      <Display users={users} posts={posts} />
     </>
   );
 }
