@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./components/Main";
 import Login from "./components/Login";
+import Profile from "./components/Profile";
 
 function App() {
   useEffect(() => {
@@ -52,7 +53,11 @@ function App() {
             />
           }
         />
-        <Route path="/main" element={<Main users={users} posts={posts} />} />
+        <Route
+          path="/main"
+          element={<Main users={users} posts={posts} user={username} />}
+        />
+        <Route path="/profile" element={<Profile id={username} />} />
       </Routes>
     </Router>
   );
