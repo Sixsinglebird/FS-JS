@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useHistory, useNavigate } from "react-router-dom";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 // the component useState keeps track of the usename and password values
 // it also defines three functions
 //handle(Username + Password)Change and handle submit
