@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useNavigate } from "react-router-dom";
 // the component useState keeps track of the usename and password values
 // it also defines three functions
 //handle(Username + Password)Change and handle submit
@@ -17,9 +17,11 @@ const Login = ({ setPassword, setUsername, username, password }) => {
     setPassword(event.target.value);
   };
 
+  const navigate = useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(`Username: ${username} Password: ${password}`);
+    navigate("/main");
   };
 
   return (
