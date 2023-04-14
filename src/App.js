@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./components/Main";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
+import Signup from "./components/Signup";
 
 function App() {
   useEffect(() => {
@@ -62,6 +63,7 @@ function App() {
             />
           }
         />
+        <Route path="/signup" element={<Signup />} />
         <Route
           path="/main"
           element={<Main users={users} posts={posts} user={username} />}

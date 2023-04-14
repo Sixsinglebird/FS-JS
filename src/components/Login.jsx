@@ -78,7 +78,7 @@ const Login = ({ setPassword, setUsername, username, password, users }) => {
           <button type="submit">Submit</button>
         </form>
         <div>
-          Don't Have an Account? <Link to="/Signup">Sign Up</Link>
+          Don't Have an Account? <Link to="/signup">Sign Up</Link>
         </div>
       </div>
     </div>

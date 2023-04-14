@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import Login from './Login';
-
-
+import Login from "./Login";
 
 const Signup = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -51,7 +49,7 @@ const Signup = () => {
           <button type="submit">Submit</button>
         </form>
         <div>
-          Already have an account? <Link to="/Login">Log in</Link>
+          Already have an account? <Link to="/">Log in</Link>
         </div>
       </div>
     </div>
