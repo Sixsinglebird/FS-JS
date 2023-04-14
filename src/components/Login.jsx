@@ -23,11 +23,21 @@ const Login = ({ setPassword, setUsername, username, password, users }) => {
   };
 
   const verify = async (username, password) => {
-    users.map((user) => {
-      if (user.userName === username) {
-        verifyPassword(password, user.password);
+    if (username === "") {
+      alert("username cannot be blank");
+    } else {
+      let a = true;
+      users.map((user) => {
+        if (user.userName === username) {
+          verifyPassword(password, user.password);
+          a = false;
+          return;
+        }
+      });
+      if (a) {
+        alert("no user found");
       }
-    });
+    }
   };
 
   const handleSubmit = (event) => {

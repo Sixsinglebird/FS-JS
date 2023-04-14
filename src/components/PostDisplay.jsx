@@ -3,8 +3,8 @@ import Posts from "./Posts";
 
 const PostDisplay = ({ posts, user }) => {
   return (
-    <div>
-      <h1>{user}</h1>
+    <div id="posts">
+      <h1>Welcome {user}</h1>
       <Posts posts={posts} />
     </div>
   );
