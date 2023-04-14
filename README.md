@@ -1,7 +1,3 @@
-to Begin.
-if errors run:
-windows $env:NODE_OPTIONS = "--openssl-legacy-provider"
-
 # for development
 
 1 npm install
