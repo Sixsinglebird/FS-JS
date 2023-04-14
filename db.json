@@ -4,19 +4,22 @@
       "id": 0,
       "userName": "Sixsinglebird",
       "profPic": "url link",
-      "email": "sixstonedmice@duck.com"
+      "email": "sixstonedmice@duck.com",
+      "password": "assweed"
     },
     {
       "id": 1,
       "userName": "Asingleton",
       "profPic": "url link",
-      "email": "example@duck.com"
+      "email": "example@duck.com",
+      "password": "weed"
     },
     {
       "id": 2,
       "userName": "UNKULUNKULU",
       "profPic": "url link",
-      "email": "sasdasdasde@duck.com"
+      "email": "sasdasdasde@duck.com",
+      "password": "ass"
     }
   ],
   "posts": [
