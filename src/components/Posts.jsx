@@ -3,7 +3,7 @@ import Post from "./Post";
 
 const Posts = ({ posts }) => {
   return (
-    <div id="posts">
+    <>
       {posts.map((post) => (
         <Post
           user={post.id}
@@ -12,7 +12,7 @@ const Posts = ({ posts }) => {
           key={post.postID}
         />
       ))}
-    </div>
+    </>
   );
 };
 
