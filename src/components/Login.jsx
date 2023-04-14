@@ -8,7 +8,8 @@ import { useNavigate } from "react-router-dom";
 //the submit function logs the username and passwords
 //values to the console when the user submits the form
 
-const Login = ({ setPassword, setUsername, username, password }) => {
+const Login = ({ setPassword, setUsername, username, password, users }) => {
+  const navigate = useNavigate();
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
   };
@@ -17,11 +18,22 @@ const Login = ({ setPassword, setUsername, username, password }) => {
     setPassword(event.target.value);
   };
 
-  const navigate = useNavigate();
+  const verifyPassword = async (password, stored) => {
+    password === stored ? navigate("/main") : alert("incorrect credentials");
+  };
+
+  const verify = async (username, password) => {
+    users.map((user) => {
+      if (user.userName === username) {
+        verifyPassword(password, user.password);
+      }
+    });
+  };
+
   const handleSubmit = (event) => {
+    verify(username, password);
     event.preventDefault();
-    console.log(`Username: ${username} Password: ${password}`);
-    navigate("/main");
+    document.querySelector("#password").value = "";
   };
 
   return (
@@ -33,6 +45,7 @@ const Login = ({ setPassword, setUsername, username, password }) => {
             <label>
               Username&nbsp;
               <input
+                id="userName"
                 type="text"
                 placeholder="enter username..."
                 value={username}
@@ -44,6 +57,7 @@ const Login = ({ setPassword, setUsername, username, password }) => {
             <label>
               Password&nbsp;
               <input
+                id="password"
                 type="password"
                 placeholder="enter password..."
                 value={password}
