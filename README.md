@@ -1,15 +1,15 @@
 # for development
 
-# npm install
-# npm install json-server@latest
-# npm run server
-# npm start
+### npm install
+### npm install json-server@latest
+### npm run server
+### npm start
 
 # if errors with launching npm start
 
-# npm outdated
-# if outdated 
-# npm update react-scripts
+### npm outdated
+### if outdated 
+### npm update react-scripts
 
 # Getting Started with Create React App
 
