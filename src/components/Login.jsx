@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 // the component useState keeps track of the usename and password values
 // it also defines three functions
 //handle(Username + Password)Change and handle submit
@@ -77,6 +77,9 @@ const Login = ({ setPassword, setUsername, username, password, users }) => {
           </div>
           <button type="submit">Submit</button>
         </form>
+        <div>
+          Don't Have an Account? <Link to="/Signup">Sign Up</Link>
+        </div>
       </div>
     </div>
   );
