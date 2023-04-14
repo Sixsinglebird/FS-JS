@@ -57,7 +57,10 @@ function App() {
           path="/main"
           element={<Main users={users} posts={posts} user={username} />}
         />
-        <Route path="/profile" element={<Profile id={username} />} />
+        <Route
+          path="/profile"
+          element={<Profile id={username} users={users} />}
+        />
       </Routes>
     </Router>
   );
