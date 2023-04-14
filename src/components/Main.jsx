@@ -5,7 +5,7 @@ import PostDisplay from "./PostDisplay";
 const Main = ({ users, posts, user }) => {
   return (
     <>
-      <Sidebar users={users} />
+      <Sidebar users={users} user={user} />
       <PostDisplay posts={posts} user={user} />
     </>
   );
