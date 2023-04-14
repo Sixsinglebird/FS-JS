@@ -5,6 +5,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./components/Main";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
+import Signup from './components/Signup';
+import { Link } from 'react-router-dom';
+
+
 
 function App() {
   useEffect(() => {
@@ -41,6 +45,16 @@ function App() {
 
   return (
     <Router>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Login</Link>
+          </li>
+          <li>
+            <Link to="/signup">Sign up</Link>
+          </li>
+        </ul>
+      </nav>
       <Routes>
         <Route
           path="/"
@@ -62,9 +76,21 @@ function App() {
           path="/profile"
           element={<Profile id={username} users={users} />}
         />
+        <Route path="/signup" element={<Signup />} />
+        <Route
+          path="/login"
+          element={
+            <Login
+              setUsername={setUsername}
+              setPassword={setPassword}
+              username={username}
+              password={password}
+              users={users}
+            />
+          }
+        />
       </Routes>
     </Router>
   );
-}
-
+};
 export default App;
