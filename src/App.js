@@ -26,14 +26,6 @@ function App() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const fetchUser = async (username) => {
-    users.map((user) => {
-      if (username === user.userName) {
-        return user;
-      }
-    });
-  };
-
   // returns an array of posts from json server
   const fetchPosts = async () => {
     let rsp = await fetch("http://localhost:8000/posts");
@@ -70,9 +62,7 @@ function App() {
         />
         <Route
           path="/profile"
-          element={
-            <Profile id={username} users={users} user={fetchUser(username)} />
-          }
+          element={<Profile user={username} users={users} />}
         />
       </Routes>
     </Router>
