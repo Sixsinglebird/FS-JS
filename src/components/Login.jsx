@@ -10,7 +10,7 @@ import { useEffect } from "react";
 //values to the console when the user submits the form
 
 const Login = ({ setPassword, setUsername, username, password, users }) => {
-  useEffect(() => console.log("use Effect"));
+  useEffect(() => console.log("use Effect"), []);
 
   const navigate = useNavigate();
   const handleUsernameChange = (event) => {
