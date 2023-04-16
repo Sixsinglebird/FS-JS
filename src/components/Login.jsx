@@ -30,9 +30,9 @@ const Login = ({ setPassword, setUsername, username, password, users }) => {
       users.map((user) => {
         if (user.userName === username) {
           verifyPassword(password, user.password);
-          a = false;
-          return;
+          return (a = false);
         }
+        return {};
       });
       if (a) {
         alert("no user found");
@@ -48,7 +48,7 @@ const Login = ({ setPassword, setUsername, username, password, users }) => {
 
   return (
     <div className="display">
-      <div id="login">
+      <div className="center">
         <h1>Login</h1>
         <form onSubmit={handleSubmit}>
           <div>

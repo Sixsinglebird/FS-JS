@@ -3,23 +3,32 @@
     {
       "id": 0,
       "userName": "Sixsinglebird",
-      "profPic": "https://unsplash.com/photos/mEZ3PoFGs_k",
       "email": "sixstonedmice@duck.com",
       "password": "assweed"
     },
     {
       "id": 1,
       "userName": "Asingleton",
-      "profPic": "https://unsplash.com/photos/YUu9UAcOKZ4",
       "email": "example@duck.com",
       "password": "weed"
     },
     {
       "id": 2,
       "userName": "UNKULUNKULU",
-      "profPic": "https://unsplash.com/photos/iFgRcqHznqg",
       "email": "sasdasdasde@duck.com",
       "password": "ass"
+    },
+    {
+      "id": 3,
+      "userName": "alex",
+      "password": "1234",
+      "email": "alex@duck.com"
+    },
+    {
+      "id": 4,
+      "userName": "francis",
+      "email": "frank@mail.com",
+      "password": "frank"
     }
   ],
   "posts": [

@@ -40,6 +40,10 @@ function App() {
     return data;
   };
 
+  const nextId = (users) => {
+    return users.length;
+  };
+
   return (
     <Router>
       <Routes>
@@ -52,10 +56,14 @@ function App() {
               username={username}
               password={password}
               users={users}
+              fetchUsers={fetchUsers}
             />
           }
         />
-        <Route path="/signup" element={<Signup />} />
+        <Route
+          path="/signup"
+          element={<Signup nextId={nextId} users={users} />}
+        />
         <Route
           path="/main"
           element={<Main users={users} posts={posts} user={username} />}
