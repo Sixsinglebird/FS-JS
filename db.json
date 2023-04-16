@@ -47,6 +47,12 @@
       "userName": "man",
       "email": "man@duck.com",
       "password": "man"
+    },
+    {
+      "id": 8,
+      "userName": "andrew",
+      "email": "andrew@rewmail.com",
+      "password": "1234"
     }
   ],
   "posts": [

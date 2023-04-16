@@ -9,8 +9,22 @@ import { useEffect } from "react";
 //the submit function logs the username and passwords
 //values to the console when the user submits the form
 
-const Login = ({ setPassword, setUsername, username, password, users }) => {
-  useEffect(() => console.log("use Effect"), []);
+const Login = ({
+  setPassword,
+  setUsername,
+  username,
+  password,
+  users,
+  setUsers,
+  fetchUsers,
+}) => {
+  useEffect(() => {
+    const getUsers = async () => {
+      setUsers(await fetchUsers());
+    };
+    // must call programs to run them lmaoooo
+    getUsers();
+  }, []);
 
   const navigate = useNavigate();
   const handleUsernameChange = (event) => {
