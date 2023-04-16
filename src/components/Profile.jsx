@@ -1,4 +1,5 @@
 import React from "react";
+import UserPosts from "./UserPosts";
 
 const Profile = ({ user, users }) => {
   const fetchUser = (username) => {
@@ -9,19 +10,18 @@ const Profile = ({ user, users }) => {
         tmpId = user.id;
         tmpEmail = user.email;
       }
+      return {};
     });
     return { tmpEmail, tmpId };
   };
 
-  const fetchUserPosts = (id) => {};
-
   let data = fetchUser(user);
-  console.log(data);
 
   return (
-    <div>
+    <div id="profile">
       <h1>{user}</h1>
       <h2>{data.tmpEmail}</h2>
+      <UserPosts id={data.tmpId} />
     </div>
   );
 };

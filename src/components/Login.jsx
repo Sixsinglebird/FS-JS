@@ -19,10 +19,7 @@ const Login = ({
   fetchUsers,
 }) => {
   useEffect(() => {
-    const getUsers = async () => {
-      setUsers(await fetchUsers());
-    };
-    // must call programs to run them lmaoooo
+    const getUsers = async () => setUsers(await fetchUsers());
     getUsers();
   }, []);
 

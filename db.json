@@ -53,6 +53,18 @@
       "userName": "andrew",
       "email": "andrew@rewmail.com",
       "password": "1234"
+    },
+    {
+      "id": 9,
+      "userName": "weedface",
+      "email": "weed@mail.com",
+      "password": "weedass"
+    },
+    {
+      "id": 10,
+      "userName": "six",
+      "email": "six@duck.com",
+      "password": "echo"
     }
   ],
   "posts": [
