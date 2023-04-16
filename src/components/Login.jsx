@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { useEffect } from "react";
 // the component useState keeps track of the usename and password values
 // it also defines three functions
 //handle(Username + Password)Change and handle submit
@@ -9,6 +10,8 @@ import { useNavigate, Link } from "react-router-dom";
 //values to the console when the user submits the form
 
 const Login = ({ setPassword, setUsername, username, password, users }) => {
+  useEffect(() => console.log("use Effect"));
+
   const navigate = useNavigate();
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
