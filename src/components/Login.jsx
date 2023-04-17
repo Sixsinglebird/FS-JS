@@ -64,7 +64,7 @@ const Login = ({
       <header className="header">
         <h1>Top Blog</h1>
       </header>
-      <div className="content-container">
+      <div className="center content-container">
         <div id="login">
           <h2>Login</h2>
           <form onSubmit={handleSubmit}>

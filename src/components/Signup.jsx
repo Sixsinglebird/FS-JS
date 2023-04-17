@@ -42,7 +42,7 @@ const Signup = ({ nextId, users }) => {
       <header className="header">
         <h1>Top Blog</h1>
       </header>
-      <div className="display">
+      <div className="display content-container">
         <div id="signup">
           <h2>Sign up</h2>
           <form onSubmit={handleSubmit}>
@@ -65,6 +65,17 @@ const Signup = ({ nextId, users }) => {
                   placeholder="enter password..."
                   value={password}
                   onChange={handlePasswordChange}
+                />
+              </label>
+            </div>
+            <div>
+              <label>
+                Password&nbsp;
+                <input
+                  type="email"
+                  placeholder="enter email..."
+                  value={email}
+                  onChange={handleEmailChange}
                 />
               </label>
             </div>
