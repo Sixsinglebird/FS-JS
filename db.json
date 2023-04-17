@@ -1,19 +1,19 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": 0,
       "userName": "Asingleton",
       "email": "example@duck.com",
       "password": "weed"
     },
     {
-      "id": 2,
+      "id": 1,
       "userName": "UNKULUNKULU",
       "email": "sasdasdasde@duck.com",
       "password": "ass"
     },
     {
-      "id": 3,
+      "id": 2,
       "userName": "alex",
       "password": "1234",
       "email": "alex@duck.com"
@@ -22,15 +22,15 @@
   "posts": [
     {
       "postID": 0,
+      "user": "alex",
       "content": "ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod mauris sed odio commodo, vel fermentum elit malesuada. Vestibulum dictum urna a libero varius auctor. Nam tincidunt consectetur augue, in rutrum justo tincidunt eget. Sed vitae risus auctor, gravida lorem at, commodo velit. Nulla facilisi.",
-      "date": "Mon Apr 10 2023",
-      "id": 0
+      "date": "2023/4/10 "
     },
     {
       "postID": 1,
+      "user": "UNKULUNKULU",
       "content": "ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod mauris sed odio commodo, vel fermentum elit malesuada. Vestibulum dictum urna a libero varius auctor. Nam tincidunt consectetur augue, in rutrum justo tincidunt eget. Sed vitae risus auctor, gravida lorem at, commodo velit. Nulla facilisi.",
-      "date": "Mon Apr 10 2023",
-      "id": 2
+      "date": "2023/4/10 "
     }
   ]
 }
