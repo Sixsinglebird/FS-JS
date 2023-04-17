@@ -65,6 +65,12 @@
       "userName": "six",
       "email": "six@duck.com",
       "password": "echo"
+    },
+    {
+      "id": 11,
+      "userName": "asda",
+      "email": "asd",
+      "password": "asd"
     }
   ],
   "posts": [
