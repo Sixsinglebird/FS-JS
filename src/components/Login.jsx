@@ -6,7 +6,6 @@ import { useEffect } from "react";
 //handle(Username + Password)Change and handle submit
 //the first two functions  update the
 //state of the componet when the user types in the inputs
-//the submit function logs the username and passwords
 //values to the console when the user submits the form
 
 const Login = ({
