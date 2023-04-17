@@ -47,38 +47,43 @@ const Login = ({ setPassword, setUsername, username, password, users }) => {
   };
 
   return (
-    <div className="display">
-      <div id="login">
-        <h1>Login</h1>
-        <form onSubmit={handleSubmit}>
+    <div className="container">
+      <header className="header">
+        <h1>Top Blog</h1>
+      </header>
+      <div className="content-container">
+        <div id="login">
+          <h2>Login</h2>
+          <form onSubmit={handleSubmit}>
+            <div>
+              <label>
+                Username&nbsp;
+                <input
+                  id="userName"
+                  type="text"
+                  placeholder="enter username..."
+                  value={username}
+                  onChange={handleUsernameChange}
+                />
+              </label>
+            </div>
+            <div>
+              <label>
+                Password&nbsp;
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="enter password..."
+                  value={password}
+                  onChange={handlePasswordChange}
+                />
+              </label>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
           <div>
-            <label>
-              Username&nbsp;
-              <input
-                id="userName"
-                type="text"
-                placeholder="enter username..."
-                value={username}
-                onChange={handleUsernameChange}
-              />
-            </label>
+            Don't Have an Account? <Link to="/signup">Sign Up</Link>
           </div>
-          <div>
-            <label>
-              Password&nbsp;
-              <input
-                id="password"
-                type="password"
-                placeholder="enter password..."
-                value={password}
-                onChange={handlePasswordChange}
-              />
-            </label>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-        <div>
-          Don't Have an Account? <Link to="/signup">Sign Up</Link>
         </div>
       </div>
     </div>
