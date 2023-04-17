@@ -38,46 +38,40 @@ const Signup = ({ nextId, users }) => {
   };
 
   return (
-    <div className="container">
+    <>
       <header className="header">
         <h1>Top Blog</h1>
       </header>
-      <div className="display content-container">
+      <div className="center  content-container">
         <div id="signup">
           <h2>Sign up</h2>
           <form onSubmit={handleSubmit}>
             <div>
-              <label>
-                Username&nbsp;
-                <input
-                  type="text"
-                  placeholder="enter username..."
-                  value={username}
-                  onChange={handleUsernameChange}
-                />
-              </label>
+              <label>Username&nbsp;</label>
+              <input
+                type="text"
+                placeholder="enter username..."
+                value={username}
+                onChange={handleUsernameChange}
+              />
             </div>
             <div>
-              <label>
-                Password&nbsp;
-                <input
-                  type="password"
-                  placeholder="enter password..."
-                  value={password}
-                  onChange={handlePasswordChange}
-                />
-              </label>
+              <label>Password&nbsp;</label>
+              <input
+                type="password"
+                placeholder="enter password..."
+                value={password}
+                onChange={handlePasswordChange}
+              />
             </div>
             <div>
-              <label>
-                Password&nbsp;
-                <input
-                  type="email"
-                  placeholder="enter email..."
-                  value={email}
-                  onChange={handleEmailChange}
-                />
-              </label>
+              <label>Email&nbsp;</label>
+              <input
+                type="email"
+                placeholder="enter email..."
+                value={email}
+                onChange={handleEmailChange}
+              />
             </div>
             <button type="submit">Submit</button>
           </form>
@@ -86,7 +80,7 @@ const Signup = ({ nextId, users }) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -17,6 +17,24 @@
       "userName": "alex",
       "password": "1234",
       "email": "alex@duck.com"
+    },
+    {
+      "id": 3,
+      "userName": "joe ",
+      "email": "asd@email.com",
+      "password": "12345"
+    },
+    {
+      "id": 4,
+      "userName": "single",
+      "email": "qwerty@duck",
+      "password": "qwerty"
+    },
+    {
+      "id": 5,
+      "userName": "mana",
+      "email": "mana@mail",
+      "password": "mana"
     }
   ],
   "posts": [
@@ -31,6 +49,12 @@
       "user": "UNKULUNKULU",
       "content": "ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod mauris sed odio commodo, vel fermentum elit malesuada. Vestibulum dictum urna a libero varius auctor. Nam tincidunt consectetur augue, in rutrum justo tincidunt eget. Sed vitae risus auctor, gravida lorem at, commodo velit. Nulla facilisi.",
       "date": "2023/4/10 "
+    },
+    {
+      "id": 2,
+      "user": "alex",
+      "content": "asdwer",
+      "date": "2023/3/1"
     }
   ]
 }

@@ -20,7 +20,7 @@ const CreatePost = ({ user }) => {
         "Content-type": "application/json",
       },
       body: JSON.stringify({
-        postId: 2,
+        id: 2,
         user: user,
         content: post,
         date: `${year}/${month}/${day}`,
