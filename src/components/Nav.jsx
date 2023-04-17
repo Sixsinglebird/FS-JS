@@ -5,15 +5,13 @@ const Nav = () => {
   return (
     <div id="nav" className="bottom-element">
       <ul>
-        <li>
-          <Link to="/main">Home</Link>
-        </li>
-        <li>
-          <Link to="/profile">edit profile</Link>
-        </li>
-        <li>
+        <button>
+          <Link to="/profile">Profile</Link>
+        </button>
+
+        <button>
           <Link to="/">Sign-Out</Link>
-        </li>
+        </button>
       </ul>
     </div>
   );
