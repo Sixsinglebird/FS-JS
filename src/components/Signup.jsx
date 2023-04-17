@@ -38,7 +38,6 @@ const Signup = ({ nextId, users }) => {
   };
 
   return (
-
     <div className="container">
       <header className="header">
         <h1>Top Blog</h1>
@@ -74,43 +73,6 @@ const Signup = ({ nextId, users }) => {
           <div className="login-box">
             Already have an account? <Link to="/">Log in</Link>
           </div>
-
-    <div className="display">
-      <div className="center">
-        <h1>Sign up</h1>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label>Username</label>
-            <input
-              type="text"
-              placeholder="enter username..."
-              value={username}
-              onChange={handleUsernameChange}
-            />
-          </div>
-          <div>
-            <label>Password</label>
-            <input
-              type="password"
-              placeholder="enter password..."
-              value={password}
-              onChange={handlePasswordChange}
-            />
-          </div>
-          <div>
-            <label>Email</label>
-            <input
-              type="text"
-              placeholder="enter email..."
-              value={email}
-              onChange={handleEmailChange}
-            />
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-        <div>
-          Already have an account? <Link to="/">Log in</Link>
-
         </div>
       </div>
     </div>

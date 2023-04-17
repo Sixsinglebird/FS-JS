@@ -60,7 +60,6 @@ const Login = ({
   };
 
   return (
-
     <div className="container">
       <header className="header">
         <h1>Top Blog</h1>
@@ -95,12 +94,6 @@ const Login = ({
             </div>
             <button type="submit">Submit</button>
           </form>
-
-    <div className="display">
-      <div className="center">
-        <h1>Login</h1>
-        <form onSubmit={handleSubmit}>
-
           <div>
             Don't Have an Account? <Link to="/signup">Sign Up</Link>
           </div>
