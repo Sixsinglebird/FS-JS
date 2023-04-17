@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "id": 0,
-      "userName": "Sixsinglebird",
-      "email": "sixstonedmice@duck.com",
-      "password": "assweed"
-    },
-    {
       "id": 1,
       "userName": "Asingleton",
       "email": "example@duck.com",
@@ -23,78 +17,6 @@
       "userName": "alex",
       "password": "1234",
       "email": "alex@duck.com"
-    },
-    {
-      "id": 4,
-      "userName": "francis",
-      "email": "frank@mail.com",
-      "password": "frank"
-    },
-    {
-      "id": 5,
-      "userName": "jerry",
-      "email": "jerry@mail.com",
-      "password": "jerry"
-    },
-    {
-      "id": 6,
-      "userName": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": 7,
-      "userName": "man",
-      "email": "man@duck.com",
-      "password": "man"
-    },
-    {
-      "id": 8,
-      "userName": "andrew",
-      "email": "andrew@rewmail.com",
-      "password": "1234"
-    },
-    {
-      "id": 9,
-      "userName": "weedface",
-      "email": "weed@mail.com",
-      "password": "weedass"
-    },
-    {
-      "id": 10,
-      "userName": "six",
-      "email": "six@duck.com",
-      "password": "echo"
-    },
-    {
-      "id": 11,
-      "userName": "asda",
-      "email": "asd",
-      "password": "asd"
-    },
-    {
-      "id": 12,
-      "userName": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": 13,
-      "userName": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": 14,
-      "userName": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": 15,
-      "userName": "",
-      "email": "",
-      "password": ""
     }
   ],
   "posts": [
