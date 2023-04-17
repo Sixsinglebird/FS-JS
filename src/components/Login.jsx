@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { useEffect } from "react";
 // the component useState keeps track of the usename and password values
 // it also defines three functions
 //handle(Username + Password)Change and handle submit
@@ -8,7 +9,20 @@ import { useNavigate, Link } from "react-router-dom";
 //the submit function logs the username and passwords
 //values to the console when the user submits the form
 
-const Login = ({ setPassword, setUsername, username, password, users }) => {
+const Login = ({
+  setPassword,
+  setUsername,
+  username,
+  password,
+  users,
+  setUsers,
+  fetchUsers,
+}) => {
+  useEffect(() => {
+    const getUsers = async () => setUsers(await fetchUsers());
+    getUsers();
+  }, []);
+
   const navigate = useNavigate();
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -30,9 +44,9 @@ const Login = ({ setPassword, setUsername, username, password, users }) => {
       users.map((user) => {
         if (user.userName === username) {
           verifyPassword(password, user.password);
-          a = false;
-          return;
+          return (a = false);
         }
+        return {};
       });
       if (a) {
         alert("no user found");
@@ -47,6 +61,7 @@ const Login = ({ setPassword, setUsername, username, password, users }) => {
   };
 
   return (
+
     <div className="container">
       <header className="header">
         <h1>Top Blog</h1>
@@ -81,6 +96,12 @@ const Login = ({ setPassword, setUsername, username, password, users }) => {
             </div>
             <button type="submit">Submit</button>
           </form>
+
+    <div className="display">
+      <div className="center">
+        <h1>Login</h1>
+        <form onSubmit={handleSubmit}>
+
           <div>
             Don't Have an Account? <Link to="/signup">Sign Up</Link>
           </div>

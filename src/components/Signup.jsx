@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
-import Login from "./Login";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const Signup = () => {
+const Signup = ({ nextId, users }) => {
+  const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -14,12 +16,29 @@ const Signup = () => {
     setPassword(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // TODO: Add logic to create a new user with the entered username and password
+    await fetch(`http://localhost:8000/users`, {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        id: nextId(users),
+        userName: username,
+        email: email,
+        password: password,
+      }),
+    });
+    navigate("/");
   };
 
   return (
+
     <div className="container">
       <header className="header">
         <h1>Top Blog</h1>
@@ -55,6 +74,43 @@ const Signup = () => {
           <div className="login-box">
             Already have an account? <Link to="/">Log in</Link>
           </div>
+
+    <div className="display">
+      <div className="center">
+        <h1>Sign up</h1>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label>Username</label>
+            <input
+              type="text"
+              placeholder="enter username..."
+              value={username}
+              onChange={handleUsernameChange}
+            />
+          </div>
+          <div>
+            <label>Password</label>
+            <input
+              type="password"
+              placeholder="enter password..."
+              value={password}
+              onChange={handlePasswordChange}
+            />
+          </div>
+          <div>
+            <label>Email</label>
+            <input
+              type="text"
+              placeholder="enter email..."
+              value={email}
+              onChange={handleEmailChange}
+            />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <div>
+          Already have an account? <Link to="/">Log in</Link>
+
         </div>
       </div>
     </div>

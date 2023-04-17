@@ -21,10 +21,10 @@ function App() {
   }, []);
 
   // create hooks
-  const [users, setUsers] = useState([]);
-  const [posts, setPosts] = useState([]);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [users, setUsers] = useState([]);
+  const [posts, setPosts] = useState([]);
 
   // returns an array of posts from json server
   const fetchPosts = async () => {
@@ -40,6 +40,10 @@ function App() {
     return data;
   };
 
+  const nextId = (users) => {
+    return users.length;
+  };
+
   return (
     <Router>
       <Routes>
@@ -51,11 +55,16 @@ function App() {
               setPassword={setPassword}
               username={username}
               password={password}
+              setUsers={setUsers}
               users={users}
+              fetchUsers={fetchUsers}
             />
           }
         />
-        <Route path="/signup" element={<Signup />} />
+        <Route
+          path="/signup"
+          element={<Signup nextId={nextId} users={users} />}
+        />
         <Route
           path="/main"
           element={<Main users={users} posts={posts} user={username} />}
