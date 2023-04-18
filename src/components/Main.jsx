@@ -2,11 +2,16 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import PostDisplay from "./PostDisplay";
 
-const Main = ({ users, posts, user, nextId }) => {
+const Main = ({ users, posts, user, nextId, setPosts }) => {
   return (
     <>
       <Sidebar users={users} user={user} />
-      <PostDisplay posts={posts} user={user} nextId={nextId} />
+      <PostDisplay
+        posts={posts}
+        user={user}
+        nextId={nextId}
+        setPosts={setPosts}
+      />
     </>
   );
 };
