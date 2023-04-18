@@ -30,6 +30,16 @@ const CreatePost = ({ user, nextId, setPosts, posts }) => {
         key: `${postId}${user}${postDate}`,
       }),
     });
+    await setPosts([
+      ...posts,
+      {
+        id: postId,
+        user: user,
+        content: post,
+        date: postDate,
+        key: `${postId}${user}${postDate}`,
+      },
+    ]);
     document.querySelector("#content").value = "";
   };
 
