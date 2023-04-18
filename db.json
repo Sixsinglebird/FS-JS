@@ -17,44 +17,43 @@
       "userName": "alex",
       "password": "1234",
       "email": "alex@duck.com"
-    },
-    {
-      "id": 3,
-      "userName": "joe ",
-      "email": "asd@email.com",
-      "password": "12345"
-    },
-    {
-      "id": 4,
-      "userName": "single",
-      "email": "qwerty@duck",
-      "password": "qwerty"
-    },
-    {
-      "id": 5,
-      "userName": "mana",
-      "email": "mana@mail",
-      "password": "mana"
     }
   ],
   "posts": [
     {
-      "postID": 0,
+      "id": 0,
       "user": "alex",
       "content": "ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod mauris sed odio commodo, vel fermentum elit malesuada. Vestibulum dictum urna a libero varius auctor. Nam tincidunt consectetur augue, in rutrum justo tincidunt eget. Sed vitae risus auctor, gravida lorem at, commodo velit. Nulla facilisi.",
-      "date": "2023/4/10 "
+      "date": "2023/4/10 ",
+      "key": "0alex2023/4/10"
     },
     {
-      "postID": 1,
+      "id": 1,
       "user": "UNKULUNKULU",
       "content": "ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod mauris sed odio commodo, vel fermentum elit malesuada. Vestibulum dictum urna a libero varius auctor. Nam tincidunt consectetur augue, in rutrum justo tincidunt eget. Sed vitae risus auctor, gravida lorem at, commodo velit. Nulla facilisi.",
-      "date": "2023/4/10 "
+      "date": "2023/4/10 ",
+      "key": "1UNKULUNKULU2023/04/10"
     },
     {
       "id": 2,
       "user": "alex",
-      "content": "asdwer",
-      "date": "2023/3/1"
+      "content": "not to shabby",
+      "date": "2023/3/2",
+      "key": "2alex2023/3/2"
+    },
+    {
+      "id": 3,
+      "user": "alex",
+      "content": "my dog is snoozin",
+      "date": "2023/3/2",
+      "key": "3alex2023/3/2"
+    },
+    {
+      "id": 4,
+      "user": "alex",
+      "content": "kinda weird, trynnna setup this create post function is a task and a half",
+      "date": "2023/3/2",
+      "key": "4alex2023/3/2"
     }
   ]
 }

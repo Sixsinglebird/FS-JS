@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 
-const CreatePost = ({ user }) => {
+const CreatePost = ({ user, nextId, setPosts, posts }) => {
   let [post, setPost] = useState("");
 
+  // set constants and hooks 4 post
   let date = new Date();
   var month = date.getMonth();
   var day = date.getDay();
   var year = date.getFullYear();
+  let postId = nextId(posts);
+  let postDate = `${year}/${month}/${day}`;
 
   const handleContentChange = (event) => {
     setPost(event.target.value);
@@ -20,12 +23,14 @@ const CreatePost = ({ user }) => {
         "Content-type": "application/json",
       },
       body: JSON.stringify({
-        id: 2,
+        id: postId,
         user: user,
         content: post,
-        date: `${year}/${month}/${day}`,
+        date: postDate,
+        key: `${postId}${user}${postDate}`,
       }),
     });
+    document.querySelector("#content").value = "";
   };
 
   return (

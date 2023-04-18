@@ -40,8 +40,8 @@ function App() {
     return data;
   };
 
-  const nextId = (users) => {
-    return users.length;
+  const nextId = (item) => {
+    return item.length;
   };
 
   return (
@@ -67,7 +67,15 @@ function App() {
         />
         <Route
           path="/main"
-          element={<Main users={users} posts={posts} user={username} />}
+          element={
+            <Main
+              users={users}
+              posts={posts}
+              user={username}
+              setPosts={setPosts}
+              nextId={nextId}
+            />
+          }
         />
         <Route
           path="/profile"
