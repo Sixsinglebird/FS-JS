@@ -21,7 +21,10 @@ function Credits() {
       </div>
       <div>
         <h2>Sav</h2>
-        <p>Paragraph for User 3</p>
+        <p>
+          I was tasked to create a header for the Login & Signup pages & create
+          the flow in the Figma prototype.
+        </p>
       </div>
       <div>
         <h2>P.S. Noman</h2>
