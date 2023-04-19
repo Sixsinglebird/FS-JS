@@ -4,7 +4,6 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./components/Main";
 import Login from "./components/Login";
-import Profile from "./components/Profile";
 import Signup from "./components/Signup";
 import Credits from "./components/Credits";
 
@@ -78,10 +77,7 @@ function App() {
             />
           }
         />
-        <Route
-          path="/Credits"
-          element={<Credits />}
-        />
+        <Route path="/Credits" element={<Credits />} />
       </Routes>
     </Router>
   );
