@@ -6,6 +6,7 @@ import Main from "./components/Main";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
 import Signup from "./components/Signup";
+import Credits from "./components/Credits";
 
 function App() {
   useEffect(() => {
@@ -78,8 +79,8 @@ function App() {
           }
         />
         <Route
-          path="/profile"
-          element={<Profile user={username} users={users} />}
+          path="/Credits"
+          element={<Credits />}
         />
       </Routes>
     </Router>

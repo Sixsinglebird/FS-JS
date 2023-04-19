@@ -6,7 +6,7 @@ const Nav = () => {
     <div id="nav" className="bottom-element">
       <ul>
         <button>
-          <Link to="/profile">Profile</Link>
+          <Link to="/Credits">Credits</Link>
         </button>
 
         <button>
