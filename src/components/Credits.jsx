@@ -31,8 +31,8 @@ function Credits() {
         <p>
           Thanks Noman for introducing us to our Front-end development Career.
         </p>
-        <p>we wish you the best,</p>
         <br />
+        <p>we wish you the best,</p>
         <p>sincerely,</p>
         <p>
           <em>Alex</em> <em>Cole</em> & <em>Sav</em>
