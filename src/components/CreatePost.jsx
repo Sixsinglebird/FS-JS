@@ -44,7 +44,7 @@ const CreatePost = ({ user, nextId, setPosts, posts }) => {
   };
 
   return (
-    <div className="display content-container" style={{ marginLeft: "auto" }}>
+    <div className="display content-container center">
       <form onSubmit={handleSubmit}>
         <input
           id="content"
