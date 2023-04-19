@@ -66,11 +66,10 @@ const Login = ({
       </header>
       <div className="center content-container">
         <div id="login">
-          <h2>Login</h2>
           <form onSubmit={handleSubmit}>
+          <h2>Login</h2>
             <div>
               <label>
-                Username&nbsp;
                 <input
                   id="userName"
                   type="text"
@@ -82,7 +81,7 @@ const Login = ({
             </div>
             <div>
               <label>
-                Password&nbsp;
+
                 <input
                   id="password"
                   type="password"
