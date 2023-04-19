@@ -6,7 +6,7 @@ import Main from "./components/Main";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
 import Signup from "./components/Signup";
-
+//import Credits from "./Credits";
 function App() {
   useEffect(() => {
     const getUsers = async () => {

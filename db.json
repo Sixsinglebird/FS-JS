@@ -17,6 +17,12 @@
       "userName": "alex",
       "password": "1234",
       "email": "alex@duck.com"
+    },
+    {
+      "id": 3,
+      "userName": "Jerry",
+      "email": "jerry@pronto.ca",
+      "password": "1234"
     }
   ],
   "posts": [
@@ -89,6 +95,13 @@
       "content": "how low can ya go",
       "date": "2023/3/2",
       "key": "9alex2023/3/2"
+    },
+    {
+      "id": 10,
+      "user": "Jerry",
+      "content": "Pronto Pizza 5$ Slice",
+      "date": "2023/3/2",
+      "key": "10Jerry2023/3/2"
     }
   ]
 }

@@ -1,11 +1,56 @@
+:root {
+  --primary-color: #0077cc 
+}
+
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: boarder-box;
 }
 
 html {
   background-color: paleturquoise;
+  font-family: 'Times New Roman', Times, serif;
 }
+
+body {
+  font-family: 'Times New Roman', serif;
+}
+
+
+button,
+input[type"submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: white;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: lightblue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
 
 blockquote {
   padding: 8px 40px;
@@ -39,23 +84,22 @@ hr {
   padding: 32px 16px;
 }
 
-#logo {
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
   color: #fff;
-  text-align: center;
-  font-size: 48px;
-  text-decoration: underline;
-  letter-spacing: -0.11em;
 }
 
+
 #sidebar {
-  background-color: rgba(0, 0, 0, 0.65);
-  border-right: 2px solid #000;
-  max-width: 192px;
-  padding: 8px;
-  height: 100%;
-  left: 0px;
-  top: 0px;
   position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #333;
+  color: #fff;
 }
 
 .center {
@@ -65,24 +109,59 @@ hr {
   padding-top: 50px;
 }
 
-#signup {
-  display: block;
-  margin: auto;
-  text-align: center;
-  padding-top: 50px;
+.post-form {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.post-form input[type="text"],
+.post-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.post-form textarea {
+  height: 100px;
 }
 
 #posts {
   padding: 16px 32px;
   width: 60%;
-  margin-left: 224px;
-  background-color: rgba(255, 255, 255, 0.15);
+  margin-left: 220px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.post .username {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.post .date {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.post p {
+  margin-bottom: 8px;
 }
 
 .header {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: var(--primary-color);
   color: #fff;
-  padding: 15px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 .header h1 {
@@ -94,13 +173,34 @@ hr {
   text-decoration: underline;
   letter-spacing: -0.11em;
   margin: 0px;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
+.content-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+
 .content-container form {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: lightyellow;
   border: 2px solid rgba(0, 0, 0, 0.65);
+  width: 15em;
+  height: 15em;
+  position: relative;
+  border-radius: 1em;
+  box-shadow: 0 0.2em 1.5em rgba(100, 156, 156, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.login-form, .signup-form {
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
   padding: 20px;
-  width: fit-content;
-  max-width: 35%;
 }

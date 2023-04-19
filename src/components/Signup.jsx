@@ -41,13 +41,20 @@ const Signup = ({ nextId, users }) => {
     <>
       <header className="header">
         <h1>Top Blog</h1>
+        <nav>
+    <ul>
+      <li><Link to="/">Home</Link></li>
+      <li><Link to="/credits">Credits</Link></li>
+      <li><Link to="/login">Login</Link></li>
+    </ul>
+  </nav>
       </header>
       <div className="center  content-container">
         <div id="signup">
-          <h2>Sign up</h2>
+  
           <form onSubmit={handleSubmit}>
             <div>
-              <label>Username&nbsp;</label>
+            <h2>Sign up</h2>
               <input
                 type="text"
                 placeholder="enter username..."
@@ -56,7 +63,7 @@ const Signup = ({ nextId, users }) => {
               />
             </div>
             <div>
-              <label>Password&nbsp;</label>
+              
               <input
                 type="password"
                 placeholder="enter password..."
@@ -65,7 +72,7 @@ const Signup = ({ nextId, users }) => {
               />
             </div>
             <div>
-              <label>Email&nbsp;</label>
+             
               <input
                 type="email"
                 placeholder="enter email..."
