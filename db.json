@@ -23,6 +23,12 @@
       "userName": "Jerry",
       "email": "cole.hickey@keyin.com",
       "password": "123"
+    },
+    {
+      "id": 4,
+      "userName": "alex",
+      "email": "alex@1234.com",
+      "password": "1234"
     }
   ],
   "posts": [
@@ -102,6 +108,13 @@
       "content": "well it edfinitely was not a bad day, today i am done my second semester of my programming course and i must say i am extremely excited!",
       "date": "2023/3/3",
       "key": "10UNKULUNKULU2023/3/3"
+    },
+    {
+      "id": 11,
+      "user": "alex",
+      "content": "asdksbdgffgkjadbfglbdfghh",
+      "date": "2023/4/5",
+      "key": "11alex2023/4/5"
     }
   ]
 }
